@@ -10,7 +10,7 @@ use JetBrains\PhpStorm\NoReturn;
 use ReflectionException;
 
 
-class CreateMigration extends Command implements CommandInterface
+class CreateMigration extends Command
 {
     /**
      * @throws ReflectionException

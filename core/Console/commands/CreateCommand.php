@@ -7,7 +7,7 @@ use Core\Console\Command;
 use Core\Console\CommandInterface;
 use JetBrains\PhpStorm\NoReturn;
 
-class CreateCommand extends Command implements CommandInterface
+class CreateCommand extends Command
 {
     private const TEMPLATE_COMMAND = <<<'EOF'
 <?php

@@ -15,7 +15,7 @@ use Core\Shared\Shared;
 use JetBrains\PhpStorm\NoReturn;
 use ReflectionException;
 
-class DebugRoutes extends Command implements CommandInterface
+class DebugRoutes extends Command
 {
     /**
      * @throws ReflectionException

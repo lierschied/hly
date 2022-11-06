@@ -7,7 +7,7 @@ use Core\Console\Command;
 use Core\Console\CommandInterface;
 use JetBrains\PhpStorm\NoReturn;
 
-class SharedGenerate extends Command implements CommandInterface
+class SharedGenerate extends Command
 {
     private const PATH = __DIR__ . '/../../shared';
     private const ROOT_PATH = __DIR__ . '/../../..';

@@ -3,13 +3,10 @@
 namespace Core\Console\commands;
 
 use App\Models\User;
-use Core\Console\Cli;
 use Core\Console\Command;
-use Core\Console\CommandInterface;
-use Db\Tables\UserTable;
 use JetBrains\PhpStorm\NoReturn;
 
-class Testing extends Command implements CommandInterface
+class Testing extends Command
 {
     #[NoReturn] public function run(): void
     {

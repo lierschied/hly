@@ -12,7 +12,7 @@ use ReflectionException;
 use ReflectionMethod;
 use RuntimeException;
 
-class NewShared extends Command implements CommandInterface
+class NewShared extends Command
 {
     private ClassMapper $classMapper;
 

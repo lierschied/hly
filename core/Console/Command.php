@@ -2,7 +2,7 @@
 
 namespace Core\Console;
 
-class Command
+abstract class Command implements CommandInterface
 {
     protected array $arguments;
 

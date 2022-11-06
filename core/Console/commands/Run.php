@@ -7,7 +7,7 @@ use Core\Console\Command;
 use Core\Console\CommandInterface;
 use JetBrains\PhpStorm\NoReturn;
 
-class Run extends Command implements CommandInterface
+class Run extends Command
 {
 
     #[NoReturn] public function run(): void

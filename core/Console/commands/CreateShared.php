@@ -7,7 +7,7 @@ use Core\Console\Command;
 use Core\Console\CommandInterface;
 use JetBrains\PhpStorm\NoReturn;
 
-class CreateShared extends Command implements CommandInterface
+class CreateShared extends Command
 {
 
     #[NoReturn] public function run(): void

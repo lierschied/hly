@@ -7,7 +7,7 @@ use Core\Console\Command;
 use Core\Console\CommandInterface;
 use JetBrains\PhpStorm\NoReturn;
 
-class ViewClear extends Command implements CommandInterface
+class ViewClear extends Command
 {
     #[NoReturn] public function run(): void
     {
