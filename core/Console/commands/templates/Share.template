@@ -1,0 +1,25 @@
+<?php
+
+namespace Core\Shared;
+
+use Core\Exceptions\ContainerException;
+
+/**
+ *
+ * @see \Core\{%namespace%}
+ */
+class {%name%} extends Shared
+{
+    public static function getIdentifier(): string
+    {
+        return '{%alias%}';
+    }
+
+    /**
+     * @throws ContainerException
+     */
+    public static function get_instance(): \Core\{%namespace%}
+    {
+        return self::$containerInstance->get(self::getIdentifier());
+    }
+}

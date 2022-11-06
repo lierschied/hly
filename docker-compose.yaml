@@ -1,0 +1,27 @@
+version: '3'
+services:
+  nginx:
+    container_name: hly-nginx
+    build: ./docker/nginx
+    ports:
+      - "80:${SERVER_PORT:-80}"
+    volumes:
+      - ./:/app/hly
+    links:
+      - php
+  php:
+    container_name: hly-php
+    build: ./docker/php
+    volumes:
+      - ./:/app/hly
+  mysql:
+    container_name: hly-mysql
+    image: mysql:latest
+    ports:
+      - "3306:${MYSQL_PORT:-3306}"
+    volumes:
+      - dbdata:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "${DB_PASSWORD:-password}"
+volumes:
+  dbdata:

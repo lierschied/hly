@@ -1,0 +1,28 @@
+{
+  "name": "lierschied/hly",
+  "description": "a little mvc project",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jannis.wichmann",
+      "email": "jannis-wichmann@web.de"
+    }
+  ],
+  "require": {
+    "ext-pdo": "*",
+    "ext-mysqli": "*",
+    "ext-readline": "*",
+    "ext-zend-opcache": "*"
+  },
+  "autoload": {
+    "files": [
+      "core/Helper.php"
+    ],
+    "psr-4": {
+      "Core\\": "core/",
+      "App\\": "app/",
+      "Db\\": "db/"
+    }
+  }
+}
